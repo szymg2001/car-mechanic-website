@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: #517664;
+  --bgColor: #151515;
+  --bgColorLight: #232323;
+  --bgColorDark: #0d0d0d;
+  --grayColor: rgba(255, 255, 255, 0.2);
+  --textColor: white;
+
+  --logoFont: "Marcellus SC", serif;
+  --mainFont: "Roboto", sans-serif;
+
+  --appPadding: 90px;
+}
+
+body {
+  background-color: var(--bgColor);
+  font-family: var(--mainFont);
+  color: var(--textColor);
+}
