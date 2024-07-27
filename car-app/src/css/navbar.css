@@ -1,0 +1,40 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navbar__contact-details {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-mobile-hr {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .navbar__contact-details {
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .navbar-mobile-hr {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar__contact-details {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}

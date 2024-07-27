@@ -1,5 +1,6 @@
 import React from "react";
 import { getIcon } from "../IconsFile";
+import "../css/single-contact-info.css";
 
 export default function SingleContactInfo({
   value,

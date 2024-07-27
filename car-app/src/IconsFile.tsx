@@ -17,7 +17,7 @@ export const Icons: IconType[] = [
     iconName: "default",
     iconSVG: (
       <svg
-        className="w-6 h-6 text-gray-800 dark:text-white"
+        className="icon-svg w-6 h-6 text-gray-800 dark:text-white"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -39,7 +39,7 @@ export const Icons: IconType[] = [
     iconName: "phone",
     iconSVG: (
       <svg
-        className="w-6 h-6 text-gray-800 dark:text-white"
+        className="icon-svg w-6 h-6 text-gray-800 dark:text-white"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -61,7 +61,7 @@ export const Icons: IconType[] = [
     iconName: "location",
     iconSVG: (
       <svg
-        className="w-6 h-6 text-gray-800 dark:text-white"
+        className="icon-svg w-6 h-6 text-gray-800 dark:text-white"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -90,7 +90,7 @@ export const Icons: IconType[] = [
     iconName: "mail",
     iconSVG: (
       <svg
-        className="w-6 h-6 text-gray-800 dark:text-white"
+        className="icon-svg w-6 h-6 text-gray-800 dark:text-white"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         width="24"

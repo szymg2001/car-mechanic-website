@@ -1,0 +1,36 @@
+.contact-info__container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info__icon {
+  color: var(--green);
+  margin-right: 15px;
+}
+
+.contact-info__icon > svg {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-info__value {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 1300px) {
+  .contact-info__icon {
+    margin-right: 8px;
+  }
+
+  .contact-info__icon > svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .contact-info__value {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+}

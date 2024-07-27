@@ -25,3 +25,9 @@ body {
   font-family: var(--mainFont);
   color: var(--textColor);
 }
+
+@media screen and (max-width: 950px) {
+  :root {
+    --appPadding: 30px;
+  }
+}
