@@ -7,12 +7,28 @@
   font-size: 28px;
 }
 
-hr {
-  border-color: var(--grayColor);
-}
-
 @media screen and (max-width: 1300px) {
   .logo {
     font-size: 21px;
   }
+}
+
+hr {
+  border-color: var(--grayColor);
+}
+
+.button {
+  all: unset;
+  color: #fff;
+  font-weight: 100;
+  background-color: var(--green);
+  padding: 14px 42px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.44);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--greenLight);
 }
