@@ -4,13 +4,6 @@ import "../css/hero.css";
 export default function HeroComponent() {
   return (
     <div className="hero-container">
-      <div className="hero__photo-container">
-        <img
-          src="/herophoto.avif"
-          alt="Hero component photography"
-          className="hero__photo"
-        />
-      </div>
       <div className="hero__text">
         <h1 className="hero__header">
           Mechanika samochodowa na najwyższym poziomie!
@@ -30,6 +23,13 @@ export default function HeroComponent() {
           </span>
         </p>
         <Button onClick={() => console.log("asd")}>Kontakt</Button>
+      </div>
+      <div className="hero__photo-container">
+        <img
+          src="/herophoto.avif"
+          alt="Hero component photography"
+          className="hero__photo"
+        />
       </div>
     </div>
   );
