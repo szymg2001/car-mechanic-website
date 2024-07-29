@@ -1,5 +1,6 @@
 import React from "react";
 import { getIcon } from "../IconsFile";
+import "../css/benefits.css";
 
 type SingleBoxPropsType = {
   iconName: string;
@@ -28,12 +29,12 @@ export default function BenefitsComponent() {
         text="Twój samochód, nasza troska - bez względu na markę. Zaufaj nam z każdym samochodem."
       />
       <SingleBox
-        iconName="car"
+        iconName="blocks"
         header="Szeroki wachlarz usług"
         text="Zajmujemy się wszystkim, co związane z Twoim samochodem. Nasz serwis oferuje pełną gamę usług."
       />
       <SingleBox
-        iconName="car"
+        iconName="clock"
         header="Zawsze na czas"
         text="Naprawy przeprowadzane szybko i bez zbędnej zwłoki, w najkrótszym możliwym czasie."
       />
