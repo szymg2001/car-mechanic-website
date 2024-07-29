@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import "../src/css/app.css";
 import HeroComponent from "./components/HeroComponent";
+import BenefitsComponent from "./components/BenefitsComponent";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <hr />
       <HeroComponent />
       <hr />
+      <BenefitsComponent />
     </div>
   );
 }
