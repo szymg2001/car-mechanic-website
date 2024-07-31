@@ -1,24 +1,39 @@
 import React from "react";
 import contactDetails from "../contactDetails.json";
+import "../css/information.css";
 
 interface SingleInfoBoxProps {
   children: React.ReactNode;
   title: string;
   imgSrc: string;
+  reverse?: boolean;
 }
 
-function SingleInfoBox({ children, title, imgSrc }: SingleInfoBoxProps) {
+function SingleInfoBox({
+  children,
+  title,
+  imgSrc,
+  reverse = false,
+}: SingleInfoBoxProps) {
   return (
-    <div className="single-info-box__container">
+    <div
+      className="single-info-box__container"
+      style={{
+        flexDirection: reverse ? "row-reverse" : "row",
+        backgroundImage: `url(${imgSrc})`,
+      }}
+    >
       <div className="single-info-box__content">
         <h3 className="single-info-box__header">{title}</h3>
         <div className="single-info-box__children">{children}</div>
       </div>
-      <img
-        src={imgSrc}
-        alt="info box photography"
-        className="single-info-box__image"
-      />
+      <div className="single-info-box__image-container">
+        <img
+          src={imgSrc}
+          alt="info box photography"
+          className="single-info-box__image"
+        />
+      </div>
     </div>
   );
 }
@@ -27,6 +42,7 @@ export default function InfoComponent() {
   return (
     <div className="info-component__container">
       <SingleInfoBox
+        reverse={true}
         title="Usługi naprawcze dla Twojego sprzętu rolniczego"
         imgSrc="/rolnicze.avif"
       >
@@ -53,7 +69,7 @@ export default function InfoComponent() {
           <li>Naprawa układów wydechowych</li>
         </ul>
         <p className="single-info-box__text">
-          I wiele więcej. Jeśli masz jakiekolwiek pytania, zadzwoń{" "}
+          I wiele więcej. Jeśli masz jakiekolwiek pytania, zadzwoń:{" "}
           {contactDetails.phone}
         </p>
       </SingleInfoBox>

@@ -1,0 +1,117 @@
+.info-component__container {
+  width: 100%;
+  margin-top: 125px;
+}
+
+/*SINGLE BOX*/
+.single-info-box__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 190px;
+  align-items: flex-start;
+}
+
+.single-info-box__content {
+  max-width: 500px;
+}
+
+.single-info-box__header {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.single-info-box__image-container {
+  position: relative;
+}
+
+.single-info-box__image {
+  width: 700px;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.34);
+}
+
+.single-info-box__image-container::before {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  left: 50px;
+  top: 50px;
+  background-color: var(--grayColor);
+  z-index: -1;
+  box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.14);
+}
+
+.single-info-box__text {
+  font-weight: 200;
+  line-height: 25px;
+}
+
+.single-info-box__services {
+  padding: 30px 20px;
+}
+
+@media screen and (max-width: 1495px) {
+  .single-info-box__image {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .single-info-box__header {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .single-info-box__container {
+    background-image: none !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .single-info-box__image,
+  .single-info-box__image::before {
+    display: none;
+  }
+
+  .info-component__container {
+    margin-top: 40px;
+  }
+
+  .single-info-box__container {
+    margin-bottom: 50px;
+  }
+
+  .single-info-box__container {
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .single-info-box__container::after {
+    background-color: rgba(30, 30, 30, 0.81);
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+
+  .single-info-box__content {
+    z-index: 10;
+    text-align: center;
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .single-info-box__services {
+    list-style-type: none;
+  }
+}
