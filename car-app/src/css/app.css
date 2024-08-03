@@ -4,11 +4,22 @@
 
 .logo {
   font-family: var(--logoFont);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo__main-text {
   font-size: 28px;
 }
 
+.logo__lower-text {
+  font-size: 16px;
+  color: var(--greenLight);
+}
+
 @media screen and (max-width: 1300px) {
-  .logo {
+  .logo__main-text {
     font-size: 21px;
   }
 }
