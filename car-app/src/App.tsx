@@ -4,6 +4,7 @@ import HeroComponent from "./components/HeroComponent";
 import BenefitsComponent from "./components/BenefitsComponent";
 import InfoComponent from "./components/InfoComponent";
 import LocationComponent from "./components/LocationComponent";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <InfoComponent />
       </div>
       <LocationComponent />
+      <Footer />
     </div>
   );
 }
