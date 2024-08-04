@@ -44,7 +44,7 @@ export default function InfoComponent() {
       <SingleInfoBox
         reverse={true}
         title="Usługi naprawcze dla Twojego sprzętu rolniczego"
-        imgSrc="/rolnicze.avif"
+        imgSrc="rolnicze.avif"
       >
         <p className="single-info-box__text">
           Posiadamy wieloletnie doświadczenie w serwisowaniu ciągników,
@@ -54,7 +54,7 @@ export default function InfoComponent() {
           długą żywotność.
         </p>
       </SingleInfoBox>
-      <SingleInfoBox imgSrc="/mechanic.avif" title="Nasze usługi mechaniczne">
+      <SingleInfoBox imgSrc="mechanic.avif" title="Nasze usługi mechaniczne">
         <p className="single-info-box__text">
           Oferujemy szeroki zakres usług serwisowych, w tym:
         </p>
