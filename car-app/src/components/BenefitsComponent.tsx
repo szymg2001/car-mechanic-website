@@ -1,4 +1,3 @@
-import React from "react";
 import { getIcon } from "../IconsFile";
 import "../css/benefits.css";
 
@@ -9,13 +8,13 @@ type SingleBoxPropsType = {
 };
 
 function SingleBox({ iconName, header, text }: SingleBoxPropsType) {
-  let [icon, setIcon] = React.useState(getIcon(iconName));
-
   return (
     <div className="benefits__single-box">
       <h3 className="benefits__single-box__header">{header}</h3>
       <p className="benefits__single-box__text">{text}</p>
-      <div className="benefits__single-box__icon">{icon.iconSVG}</div>
+      <div className="benefits__single-box__icon">
+        {getIcon(iconName).iconSVG}
+      </div>
     </div>
   );
 }
