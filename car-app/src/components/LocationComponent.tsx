@@ -8,6 +8,7 @@ export default function LocationComponent() {
       <h4 className="location__header">Lokalizacja</h4>
       <div className="location__map">
         <iframe
+          title="location"
           style={{ height: "100%", width: "100%", border: "0" }}
           src="https://www.google.com/maps/embed/v1/place?q=Kuryłówka,+Polska&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
         ></iframe>

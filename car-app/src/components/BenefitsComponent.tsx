@@ -10,7 +10,7 @@ type SingleBoxPropsType = {
 function SingleBox({ iconName, header, text }: SingleBoxPropsType) {
   return (
     <div className="benefits__single-box">
-      <h3 className="benefits__single-box__header">{header}</h3>
+      <h4 className="benefits__single-box__header">{header}</h4>
       <p className="benefits__single-box__text">{text}</p>
       <div className="benefits__single-box__icon">
         {getIcon(iconName).iconSVG}
