@@ -26,7 +26,8 @@ export default function HeroComponent() {
       </div>
       <div className="hero__photo-container">
         <img
-          src="herophoto.avif"
+          fetchPriority="high"
+          src="herophoto.webp"
           alt="Hero component photography"
           className="hero__photo"
         />
