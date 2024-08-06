@@ -24,7 +24,7 @@ function SingleInfoBox({
       }}
     >
       <div className="single-info-box__content">
-        <h3 className="single-info-box__header">{title}</h3>
+        <p className="single-info-box__header">{title}</p>
         <div className="single-info-box__children">{children}</div>
       </div>
       <div className="single-info-box__image-container">
