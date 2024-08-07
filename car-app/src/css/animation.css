@@ -1,0 +1,32 @@
+.animation-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bgColor);
+  z-index: 500;
+  display: flex;
+  font-family: var(--logoFont);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.animation__name {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.animation__header {
+  font-weight: 600;
+  font-size: 45px;
+  position: relative;
+}
+
+.animation__header::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: var(--grayColor);
+  bottom: -10px;
+  left: -100px;
+}

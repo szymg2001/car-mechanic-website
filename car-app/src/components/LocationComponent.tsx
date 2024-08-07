@@ -5,7 +5,7 @@ import "../css/location-component.css";
 export default function LocationComponent() {
   return (
     <div className="location-container">
-      <h4 className="location__header">Lokalizacja</h4>
+      <h3 className="location__header">Lokalizacja</h3>
       <div className="location__map">
         <iframe
           title="location"

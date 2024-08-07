@@ -5,9 +5,9 @@ export default function HeroComponent() {
   return (
     <div className="hero-container">
       <div className="hero__text">
-        <h1 className="hero__header">
+        <h2 className="hero__header">
           Mechanika samochodowa na najwyższym poziomie!
-        </h1>
+        </h2>
         <p className="hero__paragraph">
           <span className="hero__paragraph-part">
             Zapewniamy bogaty wachlarz usług serwisowych, które przedłużą

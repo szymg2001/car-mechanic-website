@@ -5,10 +5,12 @@ import BenefitsComponent from "./components/BenefitsComponent";
 import InfoComponent from "./components/InfoComponent";
 import LocationComponent from "./components/LocationComponent";
 import Footer from "./components/Footer";
+import AnimationComponent from "./components/AnimationComponent";
 
 function App() {
   return (
     <div className="app">
+      <AnimationComponent />
       <div className="container">
         <Navbar />
         <hr />
