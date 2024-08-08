@@ -1,4 +1,5 @@
 .animation-container {
+  --logo-anim-duration: 4s;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -7,18 +8,67 @@
   display: flex;
   font-family: var(--logoFont);
   align-items: center;
-  justify-content: space-around;
+  justify-content: right;
+  padding: 0px calc(var(--appPadding) + 20px);
+  animation: hideBg 1s forwards;
+  animation-delay: 4.5s;
 }
+
+@keyframes hideBg {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* .animation-container::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 110%;
+  background-color: var(--bgColorLight);
+  top: 0;
+  left: -100%;
+  transform: skewX(-20deg);
+  animation: slide 1s forwards;
+  animation-delay: 4.5s;
+} */
+/* 
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+} */
 
 .animation__name {
   font-size: 28px;
   font-weight: 100;
+  animation: logoAnimation var(--logo-anim-duration) forwards ease-in-out;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(var(--appPadding) + 20px);
 }
 
 .animation__header {
+  --header-anim-delay: 1.5s;
   font-weight: 600;
+  opacity: 0;
   font-size: 45px;
   position: relative;
+  animation: fadeIn 1s forwards;
+  animation-delay: var(--header-anim-delay);
 }
 
 .animation__header::before {
@@ -29,4 +79,65 @@
   background-color: var(--grayColor);
   bottom: -10px;
   left: -100px;
+  animation: line 0.8s forwards ease-out;
+  animation-delay: var(--header-anim-delay);
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(20px, -50%);
+  }
+  35% {
+    opacity: 1;
+    transform: translate(0px, -50%);
+  }
+  65% {
+    top: 50%;
+  }
+
+  /*   95% {
+    top: 48px;
+  }
+ */
+  96% {
+    top: 44px;
+  }
+
+  97% {
+    top: 42px;
+  }
+  98% {
+    top: 40px;
+  }
+  99% {
+    top: 39px;
+  }
+
+  100% {
+    top: 38px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(20px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
 }

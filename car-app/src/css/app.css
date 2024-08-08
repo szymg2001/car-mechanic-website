@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 200px;
 }
 .logo__main-text {
   font-size: 28px;
