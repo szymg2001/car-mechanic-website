@@ -197,6 +197,9 @@
 
 @media screen and (max-width: 480px) {
   .animation__header {
-    font-size: 22px;
+    font-size: 21px;
+  }
+  .animation__name {
+    font-size: 18px;
   }
 }
