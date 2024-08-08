@@ -27,28 +27,6 @@
   }
 }
 
-/* .animation-container::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 110%;
-  background-color: var(--bgColorLight);
-  top: 0;
-  left: -100%;
-  transform: skewX(-20deg);
-  animation: slide 1s forwards;
-  animation-delay: 4.5s;
-} */
-/* 
-@keyframes slide {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-} */
-
 .animation__name {
   font-size: 28px;
   font-weight: 100;
@@ -59,6 +37,12 @@
   top: 50%;
   transform: translateY(-50%);
   left: calc(var(--appPadding) + 20px);
+}
+
+@media screen and (max-width: 1300px) {
+  .animation__name {
+    font-size: 21px;
+  }
 }
 
 .animation__header {
@@ -83,6 +67,39 @@
   animation-delay: var(--header-anim-delay);
 }
 
+@keyframes logoAnimationMobile {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  35% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+  65% {
+    top: 40%;
+  }
+
+  96% {
+    top: 26px;
+  }
+
+  97% {
+    top: 24px;
+  }
+  98% {
+    top: 22px;
+  }
+  99% {
+    top: 21px;
+  }
+
+  100% {
+    /* top: 32px; */
+    top: 20px;
+  }
+}
+
 @keyframes logoAnimation {
   0% {
     opacity: 0;
@@ -94,28 +111,28 @@
   }
   65% {
     top: 50%;
+    transform: translate(0px, -50%);
   }
 
-  /*   95% {
-    top: 48px;
-  }
- */
   96% {
-    top: 44px;
+    top: 26px;
+    transform: translate(0);
   }
 
   97% {
-    top: 42px;
+    top: 24px;
   }
   98% {
-    top: 40px;
+    top: 22px;
   }
   99% {
-    top: 39px;
+    top: 21px;
   }
 
   100% {
-    top: 38px;
+    /* top: 32px; */
+    top: 20px;
+    transform: translate(0);
   }
 }
 
@@ -139,5 +156,41 @@
   }
   100% {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .animation-container {
+    --logo-anim-duration: 4.5s;
+    justify-content: center;
+
+    /* align-items: center;
+    justify-content: right; */
+    /* padding: 0px calc(var(--appPadding) + 20px); */
+  }
+
+  .animation__name {
+    animation: logoAnimationMobile var(--logo-anim-duration) forwards
+      ease-in-out;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .animation__header {
+    --header-anim-delay: 1.8s;
+    animation-duration: 1.5s;
+    font-size: 32px;
+  }
+
+  .animation__header::before {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .animation__header {
+    font-size: 26px;
   }
 }
