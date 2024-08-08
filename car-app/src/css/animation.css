@@ -194,3 +194,9 @@
     font-size: 26px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .animation__header {
+    font-size: 24px;
+  }
+}
