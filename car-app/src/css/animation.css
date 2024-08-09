@@ -30,7 +30,8 @@
 .animation__name {
   font-size: 28px;
   font-weight: 100;
-  animation: logoAnimation var(--logo-anim-duration) forwards ease-in-out;
+  animation: logoAnimation var(--logo-anim-duration) forwards;
+  animation-timing-function: cubic-bezier(0.74, 0.21, 0.26, 0.92);
   width: 200px;
   text-align: center;
   position: absolute;
@@ -63,12 +64,14 @@
   background-color: var(--grayColor);
   bottom: -10px;
   left: -100px;
-  animation: line 0.8s forwards ease-out;
+  animation: line 0.8s forwards;
   animation-delay: var(--header-anim-delay);
+  /* animation-timing-function: cubic-bezier(0.69, 0.42, 0.38, 1.14); */
+  animation-timing-function: cubic-bezier(0.86, 0.33, 0, 1.03);
 }
 
 @keyframes logoAnimationMobile {
-  0% {
+  /* 0% {
     opacity: 0;
     transform: translateX(-5%);
   }
@@ -92,7 +95,7 @@
   }
   99% {
     top: 21px;
-  }
+  } */
 
   100% {
     /* top: 32px; */
@@ -109,16 +112,16 @@
     opacity: 1;
     transform: translate(0px, -50%);
   }
-  65% {
+  55% {
     top: 50%;
     transform: translate(0px, -50%);
   }
-
+  /* 
   96% {
     top: 26px;
     transform: translate(0);
-  }
-
+  } */
+  /* 
   97% {
     top: 24px;
   }
@@ -127,7 +130,7 @@
   }
   99% {
     top: 21px;
-  }
+  } */
 
   100% {
     /* top: 32px; */
