@@ -71,7 +71,7 @@
 }
 
 @keyframes logoAnimationMobile {
-  /* 0% {
+  0% {
     opacity: 0;
     transform: translateX(-5%);
   }
@@ -79,26 +79,11 @@
     opacity: 1;
     transform: translateX(-50%);
   }
-  65% {
+  55% {
     top: 40%;
   }
 
-  96% {
-    top: 26px;
-  }
-
-  97% {
-    top: 24px;
-  }
-  98% {
-    top: 22px;
-  }
-  99% {
-    top: 21px;
-  } */
-
   100% {
-    /* top: 32px; */
     top: 20px;
   }
 }
@@ -116,24 +101,8 @@
     top: 50%;
     transform: translate(0px, -50%);
   }
-  /* 
-  96% {
-    top: 26px;
-    transform: translate(0);
-  } */
-  /* 
-  97% {
-    top: 24px;
-  }
-  98% {
-    top: 22px;
-  }
-  99% {
-    top: 21px;
-  } */
 
   100% {
-    /* top: 32px; */
     top: 20px;
     transform: translate(0);
   }
@@ -166,15 +135,11 @@
   .animation-container {
     --logo-anim-duration: 4.5s;
     justify-content: center;
-
-    /* align-items: center;
-    justify-content: right; */
-    /* padding: 0px calc(var(--appPadding) + 20px); */
   }
 
   .animation__name {
     animation: logoAnimationMobile var(--logo-anim-duration) forwards
-      ease-in-out;
+      cubic-bezier(0.74, 0.21, 0.26, 0.92);
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
