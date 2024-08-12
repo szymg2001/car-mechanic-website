@@ -1,7 +1,7 @@
 import Button from "./Button";
 import "../css/hero.css";
 
-export default function HeroComponent() {
+export default function HeroComponent({ callback }: { callback: () => void }) {
   return (
     <div className="hero-container">
       <div className="hero__text">
@@ -22,7 +22,7 @@ export default function HeroComponent() {
             dla nas priorytetem, dlatego gwarantujemy najwyższą jakość obsługi.
           </span>
         </p>
-        <Button onClick={() => console.log("asd")}>Kontakt</Button>
+        <Button onClick={callback}>Zobacz, gdzie jesteśmy</Button>
       </div>
       <div className="hero__photo-container">
         <img
